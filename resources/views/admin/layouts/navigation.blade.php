@@ -218,49 +218,49 @@
                 <li class="nav-main-heading">İşlemler</li>
 
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/botlar*')) ? 'active' : '' }}" href="{{ route('admin.botlar') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/botlar*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-energy"></i>
                         <span class="nav-main-link-name">Botlar</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/uyeler*')) ? 'active' : '' }}" href="{{ route('admin.uyeler') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/uyeler*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-users"></i>
                         <span class="nav-main-link-name">Üyeler</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/ihaleler*')) ? 'active' : '' }}" href="{{ route('admin.ihaleler') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/ihaleler*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon fa fa-car"></i>
                         <span class="nav-main-link-name">İhaleler</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/teklifler*')) ? 'active' : '' }}" href="{{ route('admin.teklifler') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/teklifler*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-fire"></i>
                         <span class="nav-main-link-name">Teklifler</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/acik-arttirma*')) ? 'active' : '' }}" href="{{ route('admin.acik-arttirma') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/acik-arttirma*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon fa fa-arrow-up"></i>
                         <span class="nav-main-link-name">Açık Arttırma</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/kalanlar*')) ? 'active' : '' }}" href="{{ route('admin.kalanlar') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/kalanlar*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon fa fa-map-pin"></i>
                         <span class="nav-main-link-name">Kalanlar</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/kayitlar*')) ? 'active' : '' }}" href="{{ route('admin.kayitlar') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/kayitlar*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-layers"></i>
                         <span class="nav-main-link-name">Kayıtlar</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/ayarlar*')) ? 'active' : '' }}" href="{{ route('admin.ayarlar') }}">
+                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/ayarlar*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-wrench"></i>
                         <span class="nav-main-link-name">Ayarlar</span>
                     </a>

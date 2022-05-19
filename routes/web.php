@@ -40,32 +40,19 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function () {
         
         Route::get('dashboard', 'HomeController@index')->name('dashboard');
 
-        Route::get('botlar', function () {
-            return view('admin.pages.botlar');
-        })->name('botlar');
-        Route::get('uyeler', function () {
-            return view('admin.pages.uyeler');
-        })->name('uyeler');
-        Route::get('ihaleler', function () {
-            return view('admin.pages.ihaleler');
-        })->name('ihaleler');
-        Route::get('teklifler', function () {
-            return view('admin.pages.teklifler');
-        })->name('teklifler');
-        Route::get('acik-arttirma', function () {
-            return view('admin.pages.acik-art');
-        })->name('acik-arttirma');
-        Route::get('kalanlar', function () {
-            return view('admin.pages.kalanlar');
-        })->name('kalanlar');
-        Route::get('kayitlar', function () {
-            return view('admin.pages.kayitlar');
-        })->name('kayitlar');
-        Route::get('ayarlar', function () {
-            return view('admin.pages.ayarlar');
-        })->name('ayarlar');
-        
+    });
+    Route::get('logout', 'Auth\AuthenticatedSessionController@destroy')->name('logout');
+});
 
+//User
+Route::namespace('User')->prefix('user')->name('user.')->group(function () {
+    Route::namespace('Auth')->middleware('guest:user')->group(function () {
+        //login route
+        Route::get('login', 'AuthenticatedSessionController@create')->name('login');
+        Route::post('login', 'AuthenticatedSessionController@store')->name('userlogin');
+    });
+    Route::middleware('user')->group(function () {
+        Route::get('dashboard', 'HomeController@index')->name('dashboard');
     });
     Route::get('logout', 'Auth\AuthenticatedSessionController@destroy')->name('logout');
 });
