@@ -38,6 +38,20 @@
 
     <script src="{{ asset('admin-files/js/oneui.core.min.js') }}"></script>
     <script src="{{ asset('admin-files/js/oneui.app.min.js') }}"></script>
+    <!-- tabels JS Plugins -->
+    <script src="{{ asset('admin-files/js/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/plugins/datatables/dataTables.bootstrap4.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/plugins/datatables/buttons/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/plugins/datatables/buttons/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/plugins/datatables/buttons/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/plugins/datatables/buttons/buttons.flash.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/plugins/datatables/buttons/buttons.colVis.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/pages/be_tables_datatables.min.js') }}"></script>
+    <!-- Page JS Plugins -->
+    <script src="{{ asset('admin-files/js/plugins/jquery-bootstrap-wizard/bs4/jquery.bootstrap.wizard.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/assets/js/plugins/jquery-validation/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('admin-files/js/assets/js/plugins/jquery-validation/additional-methods.js') }}"></script>
+    <script src="{{ asset('admin-files/js/pages/be_forms_wizard.min.js') }}"></script>
     <script>
         function startTime() {
             const today = new Date();
