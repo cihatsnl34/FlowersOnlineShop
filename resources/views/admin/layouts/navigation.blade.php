@@ -217,48 +217,47 @@
                 </li>
                 <li class="nav-main-heading">İşlemler</li>
 
+                
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/botlar*')) ? 'active' : '' }}" href="#">
+                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                        aria-expanded="true">
                         <i class="nav-main-link-icon si si-energy"></i>
-                        <span class="nav-main-link-name">Botlar</span>
+                        <span class="nav-main-link-name">Çiçek</span>
+                    </a>
+                    <ul class="nav-main-submenu">
+                        <li class="nav-main-item">
+                            <a class="nav-main-link"
+                                href="{{ route('admin.flower') }}">
+                                <span class="nav-main-link-name">Çiçek Listesi</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link"
+                                href="{{ route('admin.flower_add') }}">
+                                <span class="nav-main-link-name">Çiçek Ekle</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link nav-main-link" href="#">
+                        <i class="nav-main-link-icon si si-fire"></i>
+                        <span class="nav-main-link-name">Siparişler</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/uyeler*')) ? 'active' : '' }}" href="#">
-                        <i class="nav-main-link-icon si si-users"></i>
+                    <a class="nav-main-link nav-main-link" href="#">
+                        <i class="nav-main-link-icon fa fa-fire"></i>
+                        <span class="nav-main-link-name">Satılan Siparişler</span>
+                    </a>
+                </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link nav-main-link" href="{{ route('admin.userList') }}">
+                        <i class="nav-main-link-icon fa fa-users"></i>
                         <span class="nav-main-link-name">Üyeler</span>
                     </a>
                 </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/ihaleler*')) ? 'active' : '' }}" href="#">
-                        <i class="nav-main-link-icon fa fa-car"></i>
-                        <span class="nav-main-link-name">İhaleler</span>
-                    </a>
-                </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/teklifler*')) ? 'active' : '' }}" href="#">
-                        <i class="nav-main-link-icon si si-fire"></i>
-                        <span class="nav-main-link-name">Teklifler</span>
-                    </a>
-                </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/acik-arttirma*')) ? 'active' : '' }}" href="#">
-                        <i class="nav-main-link-icon fa fa-arrow-up"></i>
-                        <span class="nav-main-link-name">Açık Arttırma</span>
-                    </a>
-                </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/kalanlar*')) ? 'active' : '' }}" href="#">
-                        <i class="nav-main-link-icon fa fa-map-pin"></i>
-                        <span class="nav-main-link-name">Kalanlar</span>
-                    </a>
-                </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link {{ (request()->is('admin/kayitlar*')) ? 'active' : '' }}" href="#">
-                        <i class="nav-main-link-icon si si-layers"></i>
-                        <span class="nav-main-link-name">Kayıtlar</span>
-                    </a>
-                </li>
+                
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link {{ (request()->is('admin/ayarlar*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-wrench"></i>
