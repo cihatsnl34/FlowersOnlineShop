@@ -40,7 +40,7 @@ class FlowerController extends Controller
     {
         $flower = new Flower;
         $name = $request->input('name');
-        $flower->name = $name;
+        $flower->flowerName = $name;
         
         $flower->stokMiktar = $request->input('stokMiktar');
         $flower->price = $request->input('price');
@@ -98,7 +98,7 @@ class FlowerController extends Controller
     {
         $flower = Flower::find($id);
         $name = $request->input('name');
-        $flower->name = $name;
+        $flower->flowerName = $name;
         
         $flower->stokMiktar = $request->input('stokMiktar');
         $flower->price = $request->input('price');

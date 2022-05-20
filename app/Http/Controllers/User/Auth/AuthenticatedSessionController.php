@@ -8,7 +8,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-
+use App\Models\Siparis;
 class AuthenticatedSessionController extends Controller
 {
     /**
@@ -34,9 +34,14 @@ class AuthenticatedSessionController extends Controller
 
         $email = $request->input('email');
         $user = DB::select('select * from users where email = ?', [$email])[0];
+        
+
+        
         session(['username' =>$user->name]);
         session(['id' => $user->id]);
-
+        $sepet = Siparis::where('userId',session('id'))->where('siparisDurum',0)->get();
+        $count = count($sepet);
+        session(['sepet' => $count]);
         $request->session()->regenerate();
 
         return redirect()->intended(RouteServiceProvider::USER_HOME);
