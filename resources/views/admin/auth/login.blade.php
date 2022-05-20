@@ -14,11 +14,9 @@
                         <div class="mb-5 invisible" data-toggle="appear" data-class="animated fadeInDown">
                             <i class="fa fa-id-card fa-3x text-primary"></i>
                             <h2 class="h3 font-w400 text-white-50 invisible" data-toggle="appear" data-class="animated fadeInDown" data-timeout="300">
-                                Oto İhale Sistemi
+                                Admin Panel
                             </h2>
-                            <h4 class="text-white invisible" data-toggle="appear" data-class="animated fadeInDown">
-                                Admin <span class="font-w300">panel</span>
-                            </h4>
+                            
                         </div>
 
                         <!-- Session Status -->
@@ -46,7 +44,7 @@
                             <div class="flex items-center justify-end mt-4">
                                 <span class="m-2 text-white invisible" data-toggle="appear" data-class="animated fadeInUp" data-timeout="600">
                                     <x-button class="btn btn-sm btn-outline-primary px-4 py-2" data-toggle="click-ripple">
-                                        {{ __('Log in') }}
+                                        {{ __('Giriş Yap') }}
                                     </x-button>
                    
                                 </span>

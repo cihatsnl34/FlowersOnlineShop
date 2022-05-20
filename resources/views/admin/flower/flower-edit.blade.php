@@ -52,7 +52,7 @@
                         <div class="form-group">
                             <label for="wizard-progress2-Marka">Çiçek Adı</label>
                             <input class="form-control form-control-alt" type="text" id="wizard-progress2-Marka"
-                                name="name" value="{{$flowerData->name}}">
+                                name="name" value="{{$flowerData->flowerName}}">
                         </div>
                         <div class="form-group">
                             <label for="wizard-progress2-Marka">Stok Miktarı</label>
@@ -71,7 +71,7 @@
                     <div class="tab-pane" id="wizard-progress2-step2" role="tabpanel">
                         <div class="form-group">
                             <label for="wizard-progress2-Ana">Ana Resim</label>
-                            <img src="{{ asset('flowerImages/' . $flowerData->name . '/anaResim/' . $flowerData->anaResim . '')}}" alt="" width="200"
+                            <img src="{{ asset('flowerImages/' . $flowerData->flowerName . '/anaResim/' . $flowerData->anaResim . '')}}" alt="" width="200"
                             height="300">
                             <input class="form-control form-control-alt" type="file" id="wizard-progress2-Ana"
                                 name="anaResim">

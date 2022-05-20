@@ -5,7 +5,7 @@
         <div class="content content-full">
             <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
                 <h1 class="flex-sm-fill h3 my-2">
-                    İhaleler Listesi <small
+                    Çiçek Listesi <small
                         class="d-block d-sm-inline-block mt-2 mt-sm-0 font-size-base font-w400 text-muted"> Sistemde kayıtlı
                         olan tüm çiçekleri listeleme. <span style="text-decoration: underline">Toplam Çiçek
                             Sayısı</span>:(<span style="color: brown;">{{ count($flowers) }}</span>) </small>
@@ -41,16 +41,11 @@
                     <tbody>
                         @foreach ($flowers as $rs)
                             <tr>
-                                <td class="text-center font-size-sm">{{ $rs->name }}</td>
-                                {{-- <td class="text-center font-size-sm"><a target="_blank"
-                                    href="{{ route('user.ilanDetay', ['id' => $ihale['ihaleNo']]) }}"
-                                    class="slide">
-                                    {{ $ihale['ihaleNo'] }}
-                                </a>
-                            </td> --}}
-                                <td><a href="{{ asset('flowerImages/' . $rs->name . '/anaResim/' . $rs->anaResim . '')}}"
+                                <td class="text-center font-size-sm">{{ $rs->flowerName }}</td>
+                               
+                                <td><a href="{{ asset('flowerImages/' . $rs->flowerName . '/anaResim/' . $rs->anaResim . '')}}"
                                         target="_blank"> <img
-                                            src="{{ asset('flowerImages/' . $rs->name . '/anaResim/' . $rs->anaResim . '')}}"
+                                            src="{{ asset('flowerImages/' . $rs->flowerName . '/anaResim/' . $rs->anaResim . '')}}"
                                             height="30%" width="60%" style="max-width:150px;max-height:150px;"alt="" /> </a></td>
                                 <td class="text-center font-size-sm">{{ $rs->price }}</td>
                                 <td class="text-center font-size-sm">{{ $rs->stokMiktar }}</td>

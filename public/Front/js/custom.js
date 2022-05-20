@@ -178,63 +178,10 @@ function topheadcart() {
     var totalQty = data.length;
 
 
-    html += '<div class="cart-height scrollbar" id="style2">'
-    for (var i = 0; i < data.length; i++) {
-        var giftPrice = 0;
-        /* totalQty += Number(data[i].Qty);*/
-        totalPrice += data[i].Qty * data[i].UPrice;
-        html += '<li class="cart-item" >'
-            + '<div class="cart-image">'
-        if (data[i].Image == "" || data[i].Image == null) {
-            html += '<a href="/Product/ProductDetails?ItemID=' + data[i].ItemID + '"><img alt="" src="/Content/assets/images/NA.png"></a>'
-        }
-        else {
-            html += '<a href="/Product/ProductDetails?ItemID=' + data[i].ItemID + '"><img alt="" src="https://admin.karachiflora.com/' + data[i].Image + '"></a>'
-        }
-        html += '</div>'
-            + '<div class="cart-title">'
-            + '<a href="/Product/ProductDetails?ItemID=' + data[i].ItemID + '">'
-            + '<h4 class="mb-0 lh-16">' + data[i].Qty + ' x ' + data[i].Title + '</h4>'
-            + '</a>'
-        //+ '<button class="bg-transparent border-0 text-danger" onclick="removeCartItem(' + data[i].Key + '); return false;"><i class="h6 ion-trash-a mb-0"></i></button></div>'
-        if (gifts.length > 0) {
-            var _dataGiftFilter = gifts.filter(function (obj) {
-                return (obj.ItemKey === data[i].Key);
-            });
+    
 
-            for (var j = 0; j < _dataGiftFilter.length; j++) {
-                totalPrice += _dataGiftFilter[j].DisplayPrice;
-                giftPrice += _dataGiftFilter[j].DisplayPrice;
-                html += '<p class="mb-0 text-default small lh-16 ">' + '-' + _dataGiftFilter[j].Title + '</p>'
-            }
-        }
-        html += '<div class="price-box"><span class="new-price">' + currency + ' ' + ((data[i].Qty * data[i].UPrice) + giftPrice).toFixed(2) + '</span>'
-            + '</div>'
-            + '</li>'
-    }
 
-    html += '</div>'
-
-        + '<li class="subtotal-titles">'
-        + '<div class="subtotal-titles">'
-        + ' <h3 data-translate="000co23">Sub-Total :</h3><span>' + currency + ' ' + totalPrice.toFixed(2) + '</span>'
-        + ' </div>'
-        + ' </li>'
-        + ' <li class="mini-cart-btns">'
-        + ' <div class="cart-btns">'
-        + ' <a href="/order/cart"><span data-translate="000aa5">View cart</span></a>'
-        + ' <a href="/order/checkout" ><span data-translate="000aa6">Checkout</span></a>'
-        + ' </div>'
-        + ' </li>'
-
-    if (data.length > 0) {
-        $(".head-cart").show();
-    }
-    else {
-        $(".head-cart").hide();
-    }
-    $(".head-cart").html(html);
-    $("#cart-total").html(totalQty);
+   
 };
 
 
@@ -302,7 +249,7 @@ function cartitem() {
 
 
     if (data.length > 0) {
-        $(".cart-items").html(html);
+        
         $("#check-btn").show();
     }
     else {

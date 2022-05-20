@@ -1,146 +1,7 @@
 <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed">
 
     <!-- Side Overlay-->
-    <aside id="side-overlay" class="font-size-sm">
-        <!-- Side Header -->
-        <div class="content-header border-bottom">
-            <!-- User Avatar -->
-            <a class="img-link mr-1" href="javascript:void(0)">
-                <img class="img-avatar img-avatar32" src="{{ asset('admin-files/media/avatars/avatar10.jpg') }}" alt="">
-            </a>
-            <!-- END User Avatar -->
-
-            <!-- User Info -->
-            <div class="ml-2">
-                <a class="link-fx text-dark font-w600" href="javascript:void(0)">{{session('username')}}</a>
-            </div>
-            <!-- END User Info -->
-
-            <!-- Close Side Overlay -->
-            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-            <a class="ml-auto btn btn-sm btn-dual" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
-                <i class="fa fa-fw fa-times text-danger"></i>
-            </a>
-            <!-- END Close Side Overlay -->
-        </div>
-        <!-- END Side Header -->
-
-        <!-- Side Content -->
-        <div class="content-side">
-            <!-- Side Overlay Tabs -->
-            <div class="block block-transparent pull-x pull-t">
-                <ul class="nav nav-tabs nav-tabs-alt nav-justified" data-toggle="tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#so-overview">
-                            <i class="fa fa-fw fa-cogs text-gray mr-1"></i> Ayarlar
-                        </a>
-                    </li>
-                </ul>
-                <div class="block-content tab-content overflow-hidden">
-                    <!-- Overview Tab -->
-                    <div class="tab-pane pull-x fade fade-left show active" id="so-overview" role="tabpanel">
-                        <!-- Activity -->
-                        <div class="block">
-                            <div class="block-header block-header-default">
-                                <h3 class="block-title">Burasi Gelecek ..</h3>
-                                <div class="block-options">
-                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
-                                        <i class="si si-refresh"></i>
-                                    </button>
-                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
-                                </div>
-                            </div>
-
-                            <div class="block-content">
-                                <!--
-                                <ul class="nav-items mb-0">
-                                    <li>
-                                        <a class="text-dark media py-2" href="javascript:void(0)">
-                                            <div class="media-body">
-                                                <div class="font-w600">Yeni</div>
-                                                <div class="text-success">Admin</div>
-                                                <small class="text-muted">3 min ago</small>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                -->
-                            </div>
-
-                        </div>
-                        <!-- END Activity -->
-
-                        <!-- Online Friends -->
-                        <div class="block">
-                            <div class="block-header block-header-default">
-                                <h3 class="block-title">Burasi Gelecek ..</h3>
-                                <div class="block-options">
-                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
-                                        <i class="si si-refresh"></i>
-                                    </button>
-                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <!-- 
-                                <ul class="nav-items mb-0">
-                                    <li>
-                                        <a class="media py-2" href="javascript:void(0)">
-                                            <div class="mr-3 ml-2 overlay-container overlay-bottom">
-                                                <img class="img-avatar img-avatar48" src="{{ asset('admin-files/media/avatars/avatar3.jpg') }}" alt="">
-                                                <span class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
-                                            </div>
-                                            <div class="media-body">
-                                                <div class="font-w600">admin</div>
-                                                <div class="font-w400 text-muted">Copywriter</div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                -->
-                            </div>
-                        </div>
-                        <!-- END Online Friends -->
-
-                        <!-- Quick Settings -->
-                        <div class="block mb-0">
-                            <div class="block-header block-header-default">
-                                <h3 class="block-title">Burasi Gelecek ..</h3>
-                                <div class="block-options">
-                                    <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
-                                </div>
-                            </div>
-                            <div class="block-content">
-                                <!--
-                                <form action="be_pages_dashboard.html" method="POST" onsubmit="return false;">
-                                    <hr>
-                                    <div class="form-group">
-                                        <p class="font-w600 mb-1">
-                                            Application Alerts
-                                        </p>
-                                        <div class="custom-control custom-switch mb-1">
-                                            <input type="checkbox" class="custom-control-input" id="so-settings-check3" name="so-settings-check3" checked>
-                                            <label class="custom-control-label" for="so-settings-check3">Email Notifications</label>
-                                        </div>
-                                        <div class="custom-control custom-switch mb-1">
-                                            <input type="checkbox" class="custom-control-input" id="so-settings-check4" name="so-settings-check4" checked>
-                                            <label class="custom-control-label" for="so-settings-check4">SMS Notifications</label>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                </form>
-                                -->
-                            </div>
-                        </div>
-                        <!-- END Quick Settings -->
-                    </div>
-                    <!-- END Overview Tab -->
-                </div>
-            </div>
-            <!-- END Side Overlay Tabs -->
-        </div>
-        <!-- END Side Content -->
-    </aside>
+   
     <!-- END Side Overlay -->
 
     <!-- Sidebar -->
@@ -148,10 +9,10 @@
         <!-- Side Header -->
         <div class="content-header bg-white-5">
             <!-- Logo -->
-            <a class="font-w600 text-dual" href="index.html">
+            <a class="font-w600 text-dual" href="{{route('admin.dashboard')}}">
 
                 <span class="smini-hide">
-                    <span class="font-w700 font-size-h5">OİS |</span> <span class="font-w400">{{session('username')}}</span>
+                    <span class="font-w700 font-size-h5">{{session('username')}}</span>
                 </span>
             </a>
             <!-- END Logo -->
@@ -240,15 +101,9 @@
                     </ul>
                 </li>
                 <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link" href="#">
+                    <a class="nav-main-link nav-main-link" href="{{ route('admin.siparisler') }}">
                         <i class="nav-main-link-icon si si-fire"></i>
                         <span class="nav-main-link-name">Siparişler</span>
-                    </a>
-                </li>
-                <li class="nav-main-item">
-                    <a class="nav-main-link nav-main-link" href="#">
-                        <i class="nav-main-link-icon fa fa-fire"></i>
-                        <span class="nav-main-link-name">Satılan Siparişler</span>
                     </a>
                 </li>
                 <li class="nav-main-item">
@@ -258,12 +113,12 @@
                     </a>
                 </li>
                 
-                <li class="nav-main-item">
+                {{-- <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link {{ (request()->is('admin/ayarlar*')) ? 'active' : '' }}" href="#">
                         <i class="nav-main-link-icon si si-wrench"></i>
                         <span class="nav-main-link-name">Ayarlar</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link" href="{{ route('admin.logout') }}">
                         <i class="nav-main-link-icon si si-logout"></i>
@@ -337,7 +192,7 @@
                             <img class="img-avatar img-avatar48 img-avatar-thumb" src="{{ asset('admin-files/media/avatars/avatar10.jpg') }}" alt="">
                         </div>
                         <div class="p-2">
-                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
+                            {{-- <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
                                 <span>Gelen Mesaj</span>
                                 <span>
                                     <span class="badge badge-pill badge-primary">3</span>
@@ -349,7 +204,7 @@
                                 <span>
                                     <i class="si si-user ml-1"></i>
                                 </span>
-                            </a>
+                            </a> --}}
                             <div role="separator" class="dropdown-divider"></div>
                             <h5 class="dropdown-header text-uppercase">İşlemler</h5>
                             <a class="dropdown-item d-flex align-items-center justify-content-between" href="{{ route('admin.logout') }}">
@@ -362,104 +217,7 @@
                 <!-- END User Dropdown -->
 
                 <!-- Notifications Dropdown -->
-                <div class="dropdown d-inline-block ml-2">
-                    <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="si si-bell"></i>
-                        <span class="badge badge-danger badge-pill">6</span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-notifications-dropdown">
-                        <div class="p-2 bg-primary text-center">
-                            <h5 class="dropdown-header text-capitalize text-white">Bildirimler</h5>
-                        </div>
-                        <ul class="nav-items mb-0">
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">burası gelecek...</div>
-                                        <small class="text-muted">15 dakika önce</small>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <!--
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">You have a new follower</div>
-                                        <small class="text-muted">15 min ago</small>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-plus-circle text-info"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">1 new sale, keep it up</div>
-                                        <small class="text-muted">22 min ago</small>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-times-circle text-danger"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">Update failed, restart server</div>
-                                        <small class="text-muted">26 min ago</small>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-plus-circle text-info"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">2 new sales, keep it up</div>
-                                        <small class="text-muted">33 min ago</small>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-user-plus text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">You have a new subscriber</div>
-                                        <small class="text-muted">41 min ago</small>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">You have a new follower</div>
-                                        <small class="text-muted">42 min ago</small>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
-                        </ul>
-                        <div class="p-2 border-top">
-                            <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
-                                <i class="fa fa-fw fa-arrow-down mr-1"></i> Daha Fazla..
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- END Notifications Dropdown -->
 
                 <!-- Toggle Side Overlay -->

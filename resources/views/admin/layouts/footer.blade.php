@@ -10,7 +10,7 @@
 </footer>
 <!-- END Footer -->
 
-<!-- Apps Modal -->
+{{-- <!-- Apps Modal -->
 <!-- Opens from the modal toggle button in the header -->
 <div class="modal fade" id="one-modal-apps" tabindex="-1" role="dialog" aria-labelledby="one-modal-apps" aria-hidden="true">
     <div class="modal-dialog modal-dialog-top modal-sm" role="document">
@@ -68,7 +68,7 @@
         </div>
     </div>
 </div>
-<!-- END Apps Modal -->
+<!-- END Apps Modal --> --}}
 
 
 </div>

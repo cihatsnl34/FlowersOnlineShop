@@ -82,13 +82,14 @@
         }
     </style>
 
-
+ 
 </head>
 
 <body>
    
    @include('_header')
    @include('_slider') 
+   @yield('content')
    @include('_footer') 
 
     <style>

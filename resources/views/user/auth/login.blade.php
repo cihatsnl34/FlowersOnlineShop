@@ -1,66 +1,74 @@
-@extends('user/layouts.log')
+@extends('frontEnd/layouts.layouts')
 @section("content")
 
-<div id="page-container" class="main-content-boxed">
+<div class="breadcrumb-area section-ptb" style="background: url(https://admin.karachiflora.com/assets/Upload/Banner/b8d0f2db-7e53-400e-b44c-1e05f06e9dce.jpg) repeat scroll 0 0;background-size:cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-title">Uye Giris  </h2>
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="checkout.html">Anasayfa</a></li>
+                    <li class="breadcrumb-item active">Hesap</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- Main Container -->
-    <main id="main-container">
 
-        <!-- Hero -->
-        <div class="bg-image" style="background-image: url('assets/media/photos/photo36@2x.jpg');">
-            <div class="hero bg-black-75 overflow-hidden">
-                <div class="hero-inner">
-                    <div class="content content-full text-center">
-                        <div class="mb-5 invisible" data-toggle="appear" data-class="animated fadeInDown">
-                            <i class="fa fa-id-card fa-3x text-primary"></i>
-                            <h2 class="h3 font-w400 text-white-50 invisible" data-toggle="appear" data-class="animated fadeInDown" data-timeout="300">
-                               
-                            </h2>
-                            <h4 class="text-white invisible" data-toggle="appear" data-class="animated fadeInDown">
-                                User <span class="font-w300">panel</span>
-                            </h4>
-                        </div>
+<!-- main-content-wrap start -->
+<div class="main-content-wrap section-ptb login-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+                <div class="login-register-wrapper">
+                    <!-- login-register-tab-list start -->
+                    <div class="login-register-tab-list nav">
+                        <a class="active" href="{{route('user.login')}}">
+                            <h4> Giriş Yap </h4>
+                        </a>
+                        <a href="{{route('register')}}">
+                            <h4> Kayıt Ol </h4>
+                        </a>
+                    </div>
+                    <!-- login-register-tab-list end -->
+                    <div class="tab-content">
+                        <div id="lg1" class="tab-pane active">
+                            <div class="login-form-container">
+                                <div class="login-register-form">
+                                    <form action="{{ route('user.userlogin') }}" method="post" class="needs-validation" novalidate>
+                                        @csrf
+                                        <div class="login-input-box">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-0" name="email" placeholder=" Email " required>
+                                                <div class="valid-feedback">Geçerli.</div>
+                                                <div class="invalid-feedback">Geçersiz.</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-control mb-0" name="password" placeholder="Password" required>
+                                                <div class="valid-feedback">Geçerli.</div>
+                                                <div class="invalid-feedback">Geçersiz.</div>
+                                            </div>
 
-                        <!-- Session Status -->
-                        <x-auth-session-status class="mb-4" style="color:red;" :status="session('status')" />
-
-                        <!-- Validation Errors -->
-                        <x-auth-validation-errors class="mb-4" style="color:red;" :errors="$errors" />
-
-                        <form method="POST" action="{{ route('user.userlogin') }}">
-                            @csrf
-
-                            <div class="row justify-content-center">
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="form-group">
-                                        <label style="color:darkgray;" for="email">{{__('Email')}}</label>
-                                        <input type="text" class="form-control form-control-alt" id="email" :value="old('email')" required autofocus name="email" placeholder="Enter your username..">
-                                    </div>
-                                    <div class="form-group">
-                                        <label style="color:darkgray;" for="password">{{__('Password')}}</label>
-                                        <input type="password" class="form-control form-control-alt" id="password" required autocomplete="current-password" name="password" placeholder="Enter your password..">
-                                    </div>
+                                        </div>
+                                        <div class="button-box d-flex flex-column">
+                                            
+                                            <div class="d-flex justify-content-between">
+                                                <button class="btn btn-default-opposite flex-shrink-1 login-btn px-3 py-2" id="login-btn" type="submit"><span>Giriş Yap</span></button>
+                                                
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-
-                            <div class="flex items-center justify-end mt-4">
-                                <span class="m-2 text-white invisible" data-toggle="appear" data-class="animated fadeInUp" data-timeout="600">
-                                    <x-button class="btn btn-sm btn-outline-primary px-4 py-2" data-toggle="click-ripple">
-                                        {{ __('Log in') }}
-                                    </x-button>
-                   
-                                </span>
-                            </div>
-                        </form>
-
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END Hero -->
-
-    </main>
-    <!-- END Main Container -->
+    </div>
 </div>
+<!-- main-content-wrap end -->
 
 @endsection
